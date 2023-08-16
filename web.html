@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreated Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your CSS styles here */
+
+        .header {
+            background-image: url('header-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 50px;
+        }
+
+        .about,
+        .services,
+        .contact {
+            padding: 100px 0;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Drivn</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="overlay">
+            <div class="container">
+                <h1>Book Your First Ride</h1>
+                <!-- <p>Your one-stop solution for amazing web experiences.</p> -->
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Drivn, we're a team of dedicated professionals who understand the importance of
+                modernizing the way people move around. Our app is the result of a shared vision to revolutionize the
+                taxi industry, making it safer, more comfortable, and technologically advanced.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>At Drivn, we are dedicated to providing a comprehensive and diverse range of taxi services
+                that cater to all your travel needs. Whether it's a quick ride across town or a special event, we're
+                here to make your journey enjoyable, reliable, and hassle-free. Download the app today and experience
+                the future of taxi services!</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<script>
+    // Add your JavaScript interactions here
+
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Form submitted!'); // You can replace this with your desired action
+    });
+
+</script>
+
+</html>
